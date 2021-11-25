@@ -517,7 +517,7 @@
                     });
                 },
                 loadBootstrap: function(callback) {
-                    $.getJSON('http://nightdev.com/api/1/kapchat/channels/' + encodeURIComponent(Chat.vars.channel) + '/bootstrap').done(function(data) {
+                    $.getJSON('https://nightdev.com/api/1/kapchat/channels/' + encodeURIComponent(Chat.vars.channel) + '/bootstrap').done(function(data) {
                         Chat.vars.channelId = data.channel.id;
                         Chat.vars.badges = data.badges;
                         Chat.vars.cheers = data.cheermotes;
